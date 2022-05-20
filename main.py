@@ -6,7 +6,7 @@
 
 import telebot
 from telebot import types
-bot = telebot.TeleBot("5090925332:AAG4vpXt2N65Ucdz4xaHM7eKXgg2mN2gfqE", parse_mode=None)
+bot = telebot.TeleBot("#######", parse_mode=None)
 
 from parsing import Parser, check_time, get_local_photo
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
