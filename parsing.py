@@ -34,10 +34,9 @@ class Parser:
                   'isch&sa=X&ved=2ahUKEwjelt6DjOf3AhVs-SoKHXv7DzMQ_AUoAXoECAEQAw&biw=619&bih=937&dpr=1'
             animal = 'cat'
         elif key_word=='Funny Dogs':
-            url = 'https://www.google.com/search?q=%D0%BC%D0%B8%D0%BB%D1%8B%D0%B5+%D1%81%D0%BE%D0%B1%D0%B0%D1%87%D0%BA%D0%B8+%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8&tbm=' \
-                  'isch&ved=2ahUKEwi7y6qQkuf3AhWwCBAIHR-IA1IQ2-cCegQIABAA&oq=%D0%BC%D0%B8%D0%BB%D1%8B%D0%B5+%D1%81%D0%BE%D0%B1%D0%B0%D1%87%D0%BA%D0%B8+' \
-                  '%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8&gs_lcp=CgNpbWcQAzIFCAAQgAQyBggAEAgQHjoICAAQCBAHEB46CAgAEIAEELEDOgYIABAHEB46CAgAEAcQBRAeUOgTWIdmYLhva' \
-                  'AZwAHgAgAGKAYgB2A6SAQQwLjE2mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=YOaDYrubMbCRwPAPn5COkAU&bih=937&biw=619&rlz=1C1GGRV_enUA771UA771'
+            url = 'https://www.google.com/search?q=%D0%BC%D0%B8%D0%BB%D1%8B%D0%B5+%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8&rlz=' \
+                  '1C1GGRV_enUA771UA771&sxsrf=ALiCzsYKaWggQ-u5JkMdMhJ52fWLvbMmzg:1653215593526&source=lnms&tbm=isch&sa=' \
+                  'X&ved=2ahUKEwjSx8GB9PL3AhXos4sKHZITDzUQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1'
             animal = 'dog'
         session = HTMLSession()
         response = session.get(url)
