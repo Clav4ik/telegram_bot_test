@@ -6,7 +6,7 @@
 
 import telebot
 from telebot import types
-bot = telebot.TeleBot("#######", parse_mode=None)
+bot = telebot.TeleBot("###", parse_mode=None)
 
 from parsing import Parser, check_time, get_local_photo
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
@@ -16,9 +16,8 @@ def send_welcome(message):
 	cats = types.KeyboardButton('Funny Cats')
 	dogs = types.KeyboardButton('Funny Dogs')
 	markup.add(cats, dogs)
-
-	#bot.reply_to(message, f"{message.chat.id}, how are you doing?")
-	bot.send_message(message.chat.id, message, reply_markup=markup)
+	hi_mes = f'Hi, {message.from_user.first_name}'
+	bot.send_message(message.chat.id, hi_mes, reply_markup=markup)
 
 @bot.message_handler(content_types=['text'])
 def send_answer(message):
@@ -48,5 +47,3 @@ def test_answer(message):
 	bot.reply_to(message.chat.id, "document")
 
 bot.infinity_polling()
-#1652889620
-#1652889824
